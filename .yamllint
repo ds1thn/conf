@@ -1,0 +1,18 @@
+---
+yaml-files:
+  - '*.yaml'
+  - '*.yml'
+
+rules:
+  # 80 chars should be enough, but don't fail if a line is longer
+  line-length:
+    max: 200
+    level: warning
+  truthy: disable
+  indentation:
+    spaces: consistent
+    indent-sequences: true
+    check-multi-line-strings: false
+  comments:
+    require-starting-space: true
+    min-spaces-from-content: 1
